@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Xingu Landscape</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<!-- 页头 -->
+	<header>
+		<!-- 导航栏 -->
+		<nav>
+			<div class="logo"><a href="#">Xingu Landscape</a></div>
+			<ul>
+				<li><a class="active" href="#">主页</a></li>
+				<li><a href="#">景观设计</a></li>
+				<li><a href="#">去过的地方</a></li>
+				<li><a href="#">生活故事</a></li>
+			</ul>		
+		</nav>
+		<div id="banner">
+			<div class="inner">
+				<h1>WELCOME</h1>
+				<p class="sub-heading">人生几句话</p>
+				<!-- <button>click me!</button> -->
+				<!-- <div class="more">more</div> -->
+			</div>
+		</div>
+	</header>
+	<!-- 内容 -->
+	<div class="content">
+		<!-- <section class="video-section">
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet eligendi, itaque, possimus ipsa architecto reprehenderit et voluptas laboriosam numquam, quia sequi consectetur sapiente temporibus earum reiciendis deserunt. Natus, dolore?
+			</div>
+		</section> --><!-- 视频 -->
+		<section class="design-section">
+			<div class="wrapper">
+				<h2>景观设计</h2>
+				<div class="image-group">
+					<div class="image">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+					<div class="image">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+					<div class="image">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+				</div>
+				<div>
+					<button>See more!</button>
+				</div>
+			</div>
+		</section><!-- 设计图 -->
+		<section class="places-section"></section><!-- 去过的地方 -->
+		<section class="life-section"></section><!-- 生活故事 -->
+		<section class="resume-section"></section><!-- 简历 -->
+	</div>
+	<!-- 页尾 -->
+	<footer></footer>
+</body>
+</html>

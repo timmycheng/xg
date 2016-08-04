@@ -1,0 +1,160 @@
+/*背景色*/
+body{
+	background-color: #f5f5f5;
+}
+/*导航栏浮动，置顶*/
+#nav
+{
+	position: absolute;
+	z-index: 2;
+}
+/*导航栏透明，去边框*/
+.navbar
+{
+	background-color: transparent;
+	border: none;
+	margin: 0;
+}
+/*标题置白，增大，缩进*/
+.navbar-brand strong
+{
+	color: white;
+	font-size: 30px;
+	letter-spacing: -2px;
+}
+/*链接字体，缩进*/
+#main-header ul>li
+{
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+#main-header ul>li>a
+{
+	color: gray;
+}
+/*标题居中*/
+.banner-inner
+{
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	top: 35%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	overflow: auto;
+	color: white;
+}
+/*标题字体*/
+.banner-inner
+{
+	text-align: center;
+}
+.banner-inner h1
+{
+	font-size: 70px;
+	margin: 0;
+	font-weight: 700;
+	letter-spacing: -6px;
+}
+.banner-inner p
+{
+	font-size: 20px;
+	letter-spacing: 6px;
+}
+/*轮播图大小*/
+.banner-slide
+{
+	max-height: 600px;
+}
+.banner-slide img
+{
+	max-height: inherit;
+}
+/*轮播图下方按钮隐藏*/
+.unslider ol
+{
+	display: none;
+}
+/*内围宽度*/
+.inner
+{
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+}
+/*内围标题*/
+.inner h2
+{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+	font-size: 36px;
+}
+.inner h3
+{
+	letter-spacing: -2px;
+}
+.inner h4
+{
+	letter-spacing: -1px;
+}
+/*图片集高度*/
+/*.image-group
+{
+	max-height: auto;
+}
+.image-item
+{
+	max-height: auto;
+}
+.image-item>a
+{
+	max-height: auto;
+}*/
+.image-item>a>img
+{
+	max-height: 300px;
+	/*width: 100%;*/
+	height: auto;
+}
+.design-image>a>img
+{
+	max-height: 450px !important;
+}
+
+
+/*查看更多按钮*/
+.btn
+{
+	margin-top: 30px;
+	width: 30%;
+	letter-spacing: 2px;
+	height: 37px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#copyright
+{
+	margin-top: 35px;
+	background: #fff;
+}
+.link-group
+{
+	list-style: none;
+	margin: 0 auto;
+}
+.link-group>li
+{
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.link-group>li>a
+{
+	color: black;
+}

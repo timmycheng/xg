@@ -1,156 +1,144 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Xingu Landscape</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Xingu Landscape</title>
 
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/page.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/unslider-dots.css">
+  <link rel="stylesheet" href="css/unslider.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/cssrefresh.js" charset="utf-8"></script>
+  <!-- <link rel="stylesheet" href="/css/master.css"> -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-  	<!-- <div class="jumbotron">
-  		<div class="container">
-  			<h1>Hello</h1>
-  		</div>
-  	</div> -->
-    <div class="container-fluid">
-    	<!-- 导航+巨幕+滚动 -->
-    	<div class="row-fluid">
-    		<!-- 导航 -->
-    		<div class="span12">
-    		</div>
-    		<!-- 巨幕 -->
-    		<div class="span12">
-    			<!-- 滚动条 -->
-    			<div id="front-page-carousel" class="carousel slide" data-ride="carousel">
-    			    <!-- indicators -->
-    			    <ol class="carousel-indicators">
-    			        <li data-target="#front-page-carousel" data-slide-to="0" class="active"></li>
-    			        <li data-target="#front-page-carousel" data-slide-to="1"></li>
-    			        <li data-target="#front-page-carousel" data-slide-to="2"></li>
-    			    </ol>
-    			    <!-- wrapper for slides -->
-    			    <div class="carousel-inner" role="listbox">
-    			        <div class="item active">
-    			            <img src="images/test.jpg" alt="111">
-    			            <div class="carousel-caption">
-    			                <p>111111</p>
-    			            </div>
-    			        </div>
-    			        <div class="item">
-    			            <img src="images/test.jpg" alt="111">
-    			            <div class="carousel-caption">
-    			                <p>111111</p>
-    			            </div>
-    			        </div>
-    			        <div class="item">
-    			            <img src="images/test.jpg" alt="111">
-    			            <div class="carousel-caption">
-    			                <p>111111</p>
-    			            </div>
-    			        </div>
-    			    </div>
-    			    <!-- controls -->
-    			    <!-- <a class="left carousel-control" href="#front-page-carousel" role="button" data-slide="prev">
-    			        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    			        <span class="sr-only">Previous</span>
-    			    </a>
-    			    <a class="right carousel-control" href="#fron-page-carousel" role="button" data-slide="next">
-    			        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    			        <span class="sr-only">Next</span>
-    			    </a> -->
-    			</div>
-    			<!-- 滚动条结束 -->
-    			<div class="main-title">
-    				<h1>Hello test test</h1>
-    			</div>    			
-    		</div>
-    		<!-- 滚动 -->
-    		<div class="span12">
-    		</div>
-    	</div>
-    	<!-- 视频 -->
-    	<div class="row-fluid">
-    		<div class="span12">
-    		</div>
-    	</div>
-    	<!-- 设计图 -->
-    	<div class="row-fluid">
-    		<div class="span4">
-    		</div>
-    		<div class="span4">
-    		</div>
-    		<div class="span4">
-    		</div>
-    	</div>
-
-    	<div class="row-fluid">
-    		<div class="span12">
-    			<div class="row-fluid">
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    			</div>
-    			<div class="row-fluid">
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    			</div>
-    			<div class="row-fluid">
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    				<div class="span4">
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="row-fluid">
-    		<div class="span3">
-    		</div>
-    		<div class="span3">
-    		</div>
-    		<div class="span3">
-    		</div>
-    		<div class="span3">
-    		</div>
-    	</div>
-    	<div class="row-fluid">
-    		<div class="span12">
-    		</div>
-    	</div>
-    	<div class="row-fluid">
-    		<div class="span12">
-    		</div>
-    	</div>
-    	<div class="row-fluid">
-    		<div class="span12">
-    		</div>
-    	</div>
+  <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="header" class="row">
+      <!-- 导航条 -->
+      <div id="nav" class="col-md-12">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-header" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> -->
+              <a href="#" class="navbar-brand"><strong>Xingu Landscape</strong></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-fixed-top" id="main-header">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#design">设计</a></li>
+                <li><a href="#photos">生活</a></li>
+                <li><a href="#article">文章</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- 标题 -->
+      <div id="banner" class="col-md-12">
+        <div class="banner-inner col-md-4">
+          <h1>WELCOME</h1>
+          <p>
+            人生几句话
+          </p>
+        </div>
+        <div class="banner-slide">
+          <ul>
+            <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner2.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner3.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div id="content" class="row">
+      <div id="video" class="col-md-12"></div>
+      <div id="design" class="col-md-12">
+        <div class="inner">
+          <!-- 标题 -->
+          <h2>景 观 设 计</h2>
+          <!-- 图片集-为了今后便于调整 -->
+          <div class="image-group">
+            <div class="image-item col-md-12 design-image">
+              <a class="thumbnail" href="#" >
+                <img class="img-responsive center-block" src="images/test.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- 连接 -->
+          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+        </div>
+      </div>
+      <div id="photos" class="col-md-12">
+        <div class="inner">
+          <!-- 标题 -->
+          <h2>走 遍 世 界</h2>
+          <!-- 图片集 -->
+          <div class="image-group col-md-12">
+            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+          </div>
+          <!-- 连接 -->
+          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+        </div>
+      </div>
+      <div id="article" class="col-md-12">
+        <div class="inner">
+          <!-- 标题 -->
+          <h2>生 活 故 事</h2>
+          <!-- 图片集 -->
+          <div class="image-group">
+            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+          </div>
+          <!-- 连接 -->
+          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="row">
+      <div id="copyright" class="col-md-12">
+        <div class="inner">
+          <h3>@Xingu.Z</h3>
+          <hr>
+          <ul class="col-md-12 link-group">
+            <li ><a href="#"><i class="fa fa-phone fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+          </ul>
+          <h4>Copyright &copy; 2016 Cheng.B, All Rights Reserved</h4>
+          <!-- <h3>#No.xxxxxxxx</h3> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/pages.js"></script>
-  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/unslider.js"></script>
+  <script src="js/pages.js"></script>
+
+</body>
 </html>
