@@ -48,7 +48,7 @@
       </div>
       <!-- 标题 -->
       <div id="banner" class="col-md-12">
-        <div class="banner-inner col-md-4">
+        <div class="banner-inner">
           <h1>WELCOME</h1>
           <p>
             人生几句话
@@ -57,8 +57,8 @@
         <div class="banner-slide">
           <ul>
             <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
-            <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
-            <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner2.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner3.jpg" alt="" /></li>
           </ul>
         </div>
       </div>
@@ -73,7 +73,7 @@
           <div class="image-group">
             <div class="image-item col-md-12 design-image">
               <a class="thumbnail" href="#" >
-                <img class="img-responsive center-block" src="images/test.jpg" alt="" />
+                <img class="img-responsive center-block" src="images/front-page/design.jpg" alt="" />
               </a>
             </div>
           </div>
@@ -87,13 +87,13 @@
           <h2>走 遍 世 界</h2>
           <!-- 图片集 -->
           <div class="image-group col-md-12">
-            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/front-page/photo1.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/front-page/photo2.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/front-page/photo3.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/front-page/photo4.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/front-page/photo5.jpg" alt="" /></a></div>
+            <div class="image-item col-md-4"><a href="#" class="thumbnail"><img src="images/front-page/photo6.jpg" alt="" /></a></div>
+            <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/front-page/photo7.jpg" alt="" /></a></div>
           </div>
           <!-- 连接 -->
           <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
@@ -105,10 +105,10 @@
           <h2>生 活 故 事</h2>
           <!-- 图片集 -->
           <div class="image-group">
-            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
-            <div class="image-item col-md-3"><a href="#" class="thumbnail"><img src="images/test.jpg" alt="" /></a></div>
+            <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article1.jpg" alt="" /></a></div>
+            <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article2.jpg" alt="" /></a></div>
+            <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article3.jpg" alt="" /></a></div>
+            <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article4.jpg" alt="" /></a></div>
           </div>
           <!-- 连接 -->
           <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
@@ -121,7 +121,7 @@
           <h3>@Xingu.Z</h3>
           <hr>
           <ul class="col-md-12 link-group">
-            <li ><a href="#"><i class="fa fa-phone fa-2x"></i></a></li>
+            <li ><a href="#"><i class="fa fa-edge fa-2x"></i></a></li>
             <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
             <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>

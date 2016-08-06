@@ -22,6 +22,10 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('main_page');
 	}
+	public function example()
+	{
+		$this->load->view('example');
+	}
 
 	public function page_missing()
 	{

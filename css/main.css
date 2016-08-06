@@ -2,6 +2,15 @@
 body{
 	background-color: #f5f5f5;
 }
+/*去除边栏*/
+.container-fluid
+{
+	padding: 0;
+}
+.navbar>.container-fluid .navbar-brand
+{
+	margin-left: 0;
+}
 /*导航栏浮动，置顶*/
 #nav
 {
@@ -19,13 +28,13 @@ body{
 .navbar-brand strong
 {
 	color: white;
-	font-size: 30px;
+	font-size: 3.5rem;
 	letter-spacing: -2px;
 }
 /*链接字体，缩进*/
 #main-header ul>li
 {
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	letter-spacing: 3px;
 }
@@ -54,14 +63,14 @@ body{
 }
 .banner-inner h1
 {
-	font-size: 70px;
+	font-size: 7rem;
 	margin: 0;
 	font-weight: 700;
 	letter-spacing: -6px;
 }
 .banner-inner p
 {
-	font-size: 20px;
+	font-size: 2rem;
 	letter-spacing: 6px;
 }
 /*轮播图大小*/
@@ -92,7 +101,7 @@ body{
 	margin-top: 50px;
 	margin-bottom: 30px;
 	letter-spacing: 5px;
-	font-size: 36px;
+	font-size: 3.6rem;
 }
 .inner h3
 {
@@ -125,16 +134,19 @@ body{
 {
 	max-height: 450px !important;
 }
-
+.article-image>a>img
+{
+	max-height: 500px !important;
+}
 
 /*查看更多按钮*/
 .btn
 {
 	margin-top: 30px;
-	width: 30%;
+	width: 45%;
 	letter-spacing: 2px;
 	height: 37px;
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 

@@ -5,7 +5,9 @@ $(document).ready(function(){
 		arrows: false,
 		// animation: 'fade',
 		infinite: true,
-		dots: false
+		dots: false,
+		speed:500,
+		delay:5000
 	});
 	// alert('in');
 });
