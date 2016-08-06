@@ -57,8 +57,8 @@
         <div class="banner-slide">
           <ul>
             <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
-            <li><img class="img-responsive center-block" src="images/front-page/banner2.jpg" alt="" /></li>
-            <li><img class="img-responsive center-block" src="images/front-page/banner3.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
+            <li><img class="img-responsive center-block" src="images/front-page/banner1.jpg" alt="" /></li>
           </ul>
         </div>
       </div>
