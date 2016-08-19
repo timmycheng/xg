@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,9 +41,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-fixed-top" id="main-header">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#design">设计</a></li>
-                <li><a href="#photos">生活</a></li>
-                <li><a href="#article">文章</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#photos">Photo</a></li>
+                <li><a href="#article">Article</a></li>
               </ul>
             </div>
           </div>
@@ -51,7 +54,7 @@
         <div class="banner-inner">
           <h1>WELCOME</h1>
           <p>
-            人生几句话
+            Heart Of Harvest
           </p>
         </div>
         <div class="banner-slide">
@@ -68,7 +71,7 @@
       <div id="design" class="col-md-12">
         <div class="inner">
           <!-- 标题 -->
-          <h2>景 观 设 计</h2>
+          <h2>DESIGN</h2>
           <!-- 图片集-为了今后便于调整 -->
           <div class="image-group">
             <div class="image-item col-md-12 design-image">
@@ -78,13 +81,13 @@
             </div>
           </div>
           <!-- 连接 -->
-          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+          <a href="design" class="btn btn-default" role="button">See More</a>
         </div>
       </div>
       <div id="photos" class="col-md-12">
         <div class="inner">
           <!-- 标题 -->
-          <h2>走 遍 世 界</h2>
+          <h2>PHOTO</h2>
           <!-- 图片集 -->
           <div class="image-group col-md-12">
             <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/front-page/photo1.jpg" alt="" /></a></div>
@@ -96,13 +99,13 @@
             <div class="image-item col-md-8"><a href="#" class="thumbnail"><img src="images/front-page/photo7.jpg" alt="" /></a></div>
           </div>
           <!-- 连接 -->
-          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+          <a href="photo" class="btn btn-default" role="button">See More</a>
         </div>
       </div>
       <div id="article" class="col-md-12">
         <div class="inner">
           <!-- 标题 -->
-          <h2>生 活 故 事</h2>
+          <h2>ARTICLE</h2>
           <!-- 图片集 -->
           <div class="image-group">
             <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article1.jpg" alt="" /></a></div>
@@ -111,20 +114,20 @@
             <div class="image-item article-image col-md-3"><a href="#" class="thumbnail"><img src="images/front-page/article4.jpg" alt="" /></a></div>
           </div>
           <!-- 连接 -->
-          <a href="#" class="btn btn-default" role="button">查 看 更 多</a>
+          <a href="article" class="btn btn-default" role="button">See More</a>
         </div>
       </div>
     </div>
     <div id="footer" class="row">
       <div id="copyright" class="col-md-12">
         <div class="inner">
-          <h3>@Xingu.Z</h3>
+          <h3>@Xingu.Zhang</h3>
           <hr>
           <ul class="col-md-12 link-group">
-            <li ><a href="#"><i class="fa fa-edge fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li ><a href="#"><i class="fa fa-envelope-o fa-2x"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
             <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
           </ul>
           <h4>Copyright &copy; 2016 Cheng.B, All Rights Reserved</h4>
           <!-- <h3>#No.xxxxxxxx</h3> -->

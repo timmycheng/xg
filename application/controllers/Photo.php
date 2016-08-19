@@ -18,19 +18,58 @@ class Photo extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('Entry_model','photo');
+	}
 	public function index()
 	{
+		$offset=$this->uri->segment(3,0);
 		// $this->load->view('main_page');
-		$this->load->model('Entry_model','photo');
-		$data['query']=$this->photo->get_entries('2');
+		// 加载模型
+		// $this->load->model('Entry_model','photo');
+		// 分页
+		$this->load->library('pagination');
+		$config['base_url']='/xg/photo/index';
+		$config['total_rows']=$this->photo->get_len('2');
+		$config['per_page']=20;
+		$config['uri_segment']=3;
+		$this->pagination->initialize($config);
+		// 分页结束
+		// 查询
+		$data['query']=$this->photo->get_entries('2',$offset);
 		$data['cate']='photo';
+		$data['len']=$this->photo->get_len('2');
+		// $data['next']=1;
+		// $data['links']=$this->pagination->create_links();
+		// $this->load->view('list',$data);
+		$this->load->view('list-head',$data);
 		$this->load->view('list',$data);
+		$this->load->view('list-footer');
 	}
+
+	// public function next($next)
+	// {
+	// 	# code...
+	// 	// $this->load->model('Entry_model','photo');
+	// 	$data['query']=$this->photo->get_entries('2',$next);
+	// 	$data['cate']='photo';
+	// 	$data['len']=$this->photo->get_len('2');
+	// 	$data['next']=$next+1;
+	//
+	// 	$this->load->view('list-head');
+	// 	$this->load->view('list',$data);
+	// 	$this->load->view('list-footer');
+	//
+	// }
+
+
 
 	public function detail($id)
 	{
 		# code...
-		$this->load->model('Entry_model','photo');
+		// $this->load->model('Entry_model','photo');
 		$data['query']=$this->photo->get_detail($id);
 		$data['cate']='photo';
 		$this->load->view('detail',$data);

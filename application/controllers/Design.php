@@ -18,19 +18,38 @@ class Design extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('Entry_model','design');
+	}
+
 	public function index()
 	{
+		$offset=$this->uri->segment(3,0);
 		// $this->load->view('main_page');
-		$this->load->model('Entry_model','design');
-		$data['query']=$this->design->get_entries('1');
+		// $this->load->model('Entry_model','design');
+		// 分页
+		$this->load->library('pagination');
+		$config['base_url']='/xg/design/index';
+		$config['total_rows']=$this->design->get_len('1');
+		$config['per_page']=20;
+		$config['uri_segment']=3;
+		$this->pagination->initialize($config);
+		// 分页结束
+		$data['query']=$this->design->get_entries('1',$offset);
 		$data['cate']='design';
+		$data['len']=$this->design->get_len('1');
+
+		$this->load->view('list-head',$data);
 		$this->load->view('list',$data);
+		$this->load->view('list-footer');
 	}
 
 	public function detail($id)
 	{
 		# code...
-		$this->load->model('Entry_model','design');
+		// $this->load->model('Entry_model','design');
 		$data['query']=$this->design->get_detail($id);
 		$data['cate']='design';
 		$this->load->view('detail',$data);
