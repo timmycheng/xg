@@ -1,0 +1,8 @@
+#list-table
+{
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: auto;
+}

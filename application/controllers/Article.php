@@ -24,7 +24,19 @@ class Article extends CI_Controller {
 		$this->load->model('Entry_model','article');
 		$data['query']=$this->article->get_entries('3');
 		$data['cate']='article';
+		// 分页
+		$this->load->library('pagination');
+		$config['base_url']='/xg/article/index';
+		$config['total_rows']=$this->article->get_len('1');
+		$config['per_page']=20;
+		$config['uri_segment']=3;
+    $config['full_tag_open']='<div class="col-md-12 navi">';
+		$config['full_tag_close']='</div>';
+		$this->pagination->initialize($config);
+		// 分页结束
+		$this->load->view('list-head',$data);
 		$this->load->view('list',$data);
+		$this->load->view('list-footer');
 	}
 
 	public function detail($id)

@@ -26,6 +26,15 @@ class Entry_model extends CI_Model
 		return $query->result_array();
 	}
 
+	public function get_all_entries()
+	{
+		$query=$this->db->select('*')->from('entries')
+			->order_by('id','ASC')
+			->get();
+
+		return $query->result_array();
+	}
+
 	public function get_len($cate)
 	{
 		# code...
@@ -34,10 +43,25 @@ class Entry_model extends CI_Model
 		return $query;
 	}
 
+	public function get_title($id)
+	{
+		# code...
+		// $this->db->where('id',$id)
+		$query=$this->db->select('title')->from('entries')
+			->where('id',$id)
+			// ->limit(1)
+			->get();
+		return $query->row()->title;
+	}
+
 	public function get_detail($id)
 	{
 		# code...
-		$query=$this->db->get_where('details',array('e_id'=>$id));
+		// $query=$this->db->get_where('details',array('e_id'=>$id));
+		$query=$this->db->select('*')->from('details')
+			->where('e_id',$id)
+			->order_by('id','ASC')
+			->get();
 		return $query->result_array();
 	}
 

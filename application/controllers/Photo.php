@@ -35,6 +35,8 @@ class Photo extends CI_Controller {
 		$config['total_rows']=$this->photo->get_len('2');
 		$config['per_page']=20;
 		$config['uri_segment']=3;
+		$config['full_tag_open']='<div class="col-md-12 navi">';
+		$config['full_tag_close']='</div>';
 		$this->pagination->initialize($config);
 		// 分页结束
 		// 查询
@@ -72,7 +74,10 @@ class Photo extends CI_Controller {
 		// $this->load->model('Entry_model','photo');
 		$data['query']=$this->photo->get_detail($id);
 		$data['cate']='photo';
+		$data['title']=$this->photo->get_title($id);
+		$this->load->view('detail-head',$data);
 		$this->load->view('detail',$data);
+		$this->load->view('detail-footer',$data);
 	}
 
 	// public function page_missing()

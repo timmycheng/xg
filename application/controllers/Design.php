@@ -35,6 +35,8 @@ class Design extends CI_Controller {
 		$config['total_rows']=$this->design->get_len('1');
 		$config['per_page']=20;
 		$config['uri_segment']=3;
+    $config['full_tag_open']='<div class="col-md-12 navi">';
+		$config['full_tag_close']='</div>';
 		$this->pagination->initialize($config);
 		// 分页结束
 		$data['query']=$this->design->get_entries('1',$offset);
