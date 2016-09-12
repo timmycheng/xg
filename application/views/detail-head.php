@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="header" class="row">
 			<div class="col-md-12 banner">
 				<h1><?php echo $title ?></h1>
-        <h4><a href="#" onclick="javascript:history.back(-1);">Back</a></h4>
+        <h4><a href="/<?php echo $cate?>" >Back</a></h4>
         <hr>
 			</div>
 		</div>

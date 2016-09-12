@@ -7,10 +7,19 @@ h1
   font-size: 4.2em;
   margin-bottom: 2px;
   text-align: right;
+	display: inline-block;
+	float: right;
+}
+h4
+{
+	display: inline-block;
+	float: left;
 }
 hr
 {
   margin: 0;
+	float: none;
+	width: 100%;
 }
 #header
 {
@@ -62,4 +71,38 @@ hr
 .navi
 {
   text-align: center;
+}
+.design-item
+{
+	height: 400px;
+	margin: 5px 0;
+}
+.design_img
+{
+	margin: 0;
+	padding: 0;
+	height: 400px;
+	background-color: #ccc;
+}
+.design_img img
+{
+	height: 400px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.design_brief
+{
+	height: inherit;
+	background-color: #ddd;
+}
+.design_brief p
+{
+	top: 35%;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+	text-align: center;
 }

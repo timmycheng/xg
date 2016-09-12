@@ -39,6 +39,7 @@ class Design extends CI_Controller {
 		$config['full_tag_close']='</div>';
 		$this->pagination->initialize($config);
 		// 分页结束
+		// 查询
 		$data['query']=$this->design->get_entries('1',$offset);
 		$data['cate']='design';
 		$data['len']=$this->design->get_len('1');
@@ -54,7 +55,10 @@ class Design extends CI_Controller {
 		// $this->load->model('Entry_model','design');
 		$data['query']=$this->design->get_detail($id);
 		$data['cate']='design';
+		$data['title']=$this->design->get_title($id);
+		$this->load->view('detail-head',$data);
 		$this->load->view('detail',$data);
+		$this->load->view('detail-footer',$data);
 	}
 
 	// public function page_missing()

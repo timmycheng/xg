@@ -25,8 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- <div id="container"> -->
 	<div class="container-fluid">
 		<div id="header" class="row">
-			<div class="col-md-12 banner">
-				<h1><?php echo strtoupper($cate) ?></h1>
+			<div class="col-md-12 banner clearfix">
+        <h4><a href="/">back</a></h4>
+        <h1><?php echo strtoupper($cate) ?></h1>
         <hr>
 			</div>
 		</div>
