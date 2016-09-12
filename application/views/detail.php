@@ -6,10 +6,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="inner">
 			<?php foreach($query as $item):?>
 				<div class="col-md-4 list-item">
-					<a href="/xg/images/300/<?=$item['content']?>-300x300.jpg" class="thumbnail"><img src="/xg/images/300/<?=$item['content']?>-300x300.jpg" alt="#" /></a>
+					<a href="/images/300/<?=$item['content']?>-300x300.jpg" class="thumbnail"><img src="/images/300/<?=$item['content']?>-300x300.jpg" alt="#" /></a>
 				</div>
 				<!-- <p><a href=""><?php echo $item['content']; ?></a></p> -->
-				<!-- <img src="/xg/images/300/<?=$item['content'] ?>-300x300.jpg" alt="" /> -->
+				<!-- <img src="/images/300/<?=$item['content'] ?>-300x300.jpg" alt="" /> -->
 			<?php endforeach;?>
 		</div>
 		<!-- <p>list here: <?=$title?></p> -->
@@ -17,6 +17,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p><a href="photo">photos list</a></p>
 		<p><a href="article">article list</a></p> -->
 
-		<!-- <p><a href="/xg/<?=$cate?>">back</a></p> -->
+		<!-- <p><a href="/<?=$cate?>">back</a></p> -->
 	</div>
 </div>

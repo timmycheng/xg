@@ -7,10 +7,10 @@
     <title>Xingu Landscape</title>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="/xg/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/xg/css/font-awesome.css">
-    <link rel="stylesheet" href="/xg/css/identify.css">
-    <script src="/xg/js/cssrefresh.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/identify.css">
+    <script src="/js/cssrefresh.js" charset="utf-8"></script>
     <!-- <link rel="stylesheet" href="/css/master.css"> -->
 
     <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/xg/js/backend.js"></script>
+    <script src="/js/backend.js"></script>
   </head>
   <body>
     <div class="container-fluid">

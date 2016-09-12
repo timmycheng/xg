@@ -9,6 +9,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="/xg/js/list.js"></script>
+<script src="/js/list.js"></script>
 </body>
 </html>

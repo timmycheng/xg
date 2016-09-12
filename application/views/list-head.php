@@ -10,10 +10,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <title>Xingu Landscape</title>
 
   <!-- bootstrap -->
-  <link rel="stylesheet" href="/xg/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/xg/css/font-awesome.css">
-  <link rel="stylesheet" href="/xg/css/list.css">
-  <script src="/xg/js/cssrefresh.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/list.css">
+  <script src="/js/cssrefresh.js" charset="utf-8"></script>
   <!-- <link rel="stylesheet" href="/css/master.css"> -->
 
   <!--[if lt IE 9]>
