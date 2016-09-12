@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="inner">
 		<?php foreach($query as $item):?>
 			<div class="col-md-3 list-item">
-				<a href="/<?php echo $cate.'/detail/'.$item['id']; ?>" class="thumbnail"><img src="/images/300/<?=$item['title_img']?>-300x300.jpg" alt="" /></a>
+				<a href="/<?php echo $cate.'/detail/'.$item['id']; ?>" class="thumbnail"><img src="/images/300/<?php echo $item['title_img']?>-300x300.jpg" alt="" /></a>
 				<!-- <div class="list-inner"> -->
 					<p class="list-inner"><?php echo $item['title']; ?></p>
 				<!-- </div> -->

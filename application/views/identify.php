@@ -40,8 +40,8 @@
             <tbody>
             <?php foreach ($list as $row):?>
               <tr>
-                <td><?=$row['title']?></td>
-                <td><?=$row['cate']?></td>
+                <td><?php echo $row['title']?></td>
+                <td><?php echo $row['cate']?></td>
                 <td>delete</td>
               </tr>
             <?php endforeach; ?>
