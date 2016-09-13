@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="row">
 	<div class="col-md-12" id="body">
 		<div class="inner">
+			<?php if($cate=='photo'): ?>
 			<?php foreach($query as $item):?>
 				<div class="col-md-4 list-item">
 					<a href="/images/300/<?php echo $item['content']?>-300x300.jpg" class="thumbnail"><img src="/images/300/<?php echo $item['content']?>-300x300.jpg" alt="#" /></a>
@@ -11,6 +12,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!-- <p><a href=""><?php echo $item['content']; ?></a></p> -->
 				<!-- <img src="/images/300/<?php echo $item['content'] ?>-300x300.jpg" alt="" /> -->
 			<?php endforeach;?>
+			<?php else: ?>
+			<?php foreach($query as $item): ?>
+				<div class="col-md-12 design_item">
+					<a href="#"><img src="..." alt="" /></a>
+				</div>
+			<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
 		<!-- <p>list here: <?php echo $title?></p> -->
 		<!-- <p><a href="design">design list</a></p>

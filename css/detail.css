@@ -58,3 +58,9 @@ hr
 {
   text-align: center;
 }
+.design_item
+{
+	height: 600px;
+	background-color: #ccc;
+	margin: 1px;
+}
